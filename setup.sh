@@ -1,5 +1,4 @@
 #bin/bash
-cd build
 docker-compose run web rails new . --force --no-deps --database=mysql --skip-test --api
 cp database.yml ./config/database.yml
 docker-compose run web rails db:create
